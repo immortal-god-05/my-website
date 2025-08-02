@@ -102,21 +102,25 @@ html {
         align-items: center;
         width: 100%;
         padding: 0 var(--spacing-md);
+        max-width: 100%;
     }
     
     .hero-title {
-        font-size: var(--font-size-3xl);
+        font-size: var(--font-size-2xl);
         line-height: 1.2;
         margin-bottom: var(--spacing-md);
         text-align: center;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
     }
     
     .demo-notice {
-        font-size: var(--font-size-base);
+        font-size: var(--font-size-sm);
         margin-bottom: var(--spacing-md);
         text-align: center;
         width: 100%;
         max-width: 100%;
+        padding: var(--spacing-sm);
     }
     
     .hero-subtitle {
@@ -130,6 +134,7 @@ html {
         margin-bottom: var(--spacing-xl);
         max-width: 100%;
         text-align: center;
+        padding: 0 var(--spacing-sm);
     }
     
     /* Button Improvements */
@@ -141,6 +146,7 @@ html {
         width: 100%;
         margin-bottom: var(--spacing-xl);
         max-width: 100%;
+        padding: 0 var(--spacing-sm);
     }
     
     .btn {
@@ -155,34 +161,35 @@ html {
         box-shadow: var(--shadow-sm);
         backdrop-filter: blur(10px);
         -webkit-backdrop-filter: blur(10px);
+        white-space: nowrap;
     }
     
     /* Profile Container Improvements */
     .profile-container {
-        width: 200px;
-        height: 200px;
+        width: 180px;
+        height: 180px;
         margin: 0 auto;
         position: relative;
     }
     
     .profile-image {
-        width: 200px;
-        height: 200px;
+        width: 180px;
+        height: 180px;
     }
     
     .profile-image img {
-        width: 200px;
-        height: 200px;
+        width: 180px;
+        height: 180px;
         object-fit: cover;
     }
     
     /* Floating Icons Improvements */
     .floating-icon {
-        width: 45px;
-        height: 45px;
-        font-size: var(--font-size-lg);
-        min-width: 45px;
-        min-height: 45px;
+        width: 40px;
+        height: 40px;
+        font-size: var(--font-size-base);
+        min-width: 40px;
+        min-height: 40px;
     }
     
     .floating-icon:nth-child(1) {
@@ -215,11 +222,11 @@ html {
     }
     
     .social-links a {
-        width: 50px;
-        height: 50px;
-        font-size: var(--font-size-lg);
-        min-width: 50px;
-        min-height: 50px;
+        width: 45px;
+        height: 45px;
+        font-size: var(--font-size-base);
+        min-width: 45px;
+        min-height: 45px;
         border-radius: var(--radius-lg);
     }
     
