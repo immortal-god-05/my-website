@@ -1,0 +1,974 @@
+/* ===== ANIMATIONS & TRANSITIONS ===== */
+
+/* ===== LOADING ANIMATIONS ===== */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes scaleIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes slideInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* ===== HOVER ANIMATIONS ===== */
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
+@keyframes shake {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    10%, 30%, 50%, 70%, 90% {
+        transform: translateX(-5px);
+    }
+    20%, 40%, 60%, 80% {
+        transform: translateX(5px);
+    }
+}
+
+@keyframes wiggle {
+    0%, 100% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(5deg);
+    }
+    75% {
+        transform: rotate(-5deg);
+    }
+}
+
+@keyframes glow {
+    0%, 100% {
+        box-shadow: 0 0 20px rgba(0, 212, 255, 0.3);
+    }
+    50% {
+        box-shadow: 0 0 30px rgba(0, 212, 255, 0.6);
+    }
+}
+
+/* ===== FLOATING ANIMATIONS ===== */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes floatSlow {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
+@keyframes floatFast {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-8px);
+    }
+}
+
+/* ===== ROTATION ANIMATIONS ===== */
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotateSlow {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotateReverse {
+    from {
+        transform: rotate(360deg);
+    }
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+/* ===== PROGRESS BAR ANIMATIONS ===== */
+@keyframes progressFill {
+    from {
+        width: 0%;
+    }
+    to {
+        width: var(--progress-width);
+    }
+}
+
+@keyframes progressGlow {
+    0%, 100% {
+        box-shadow: 0 0 5px rgba(0, 212, 255, 0.3);
+    }
+    50% {
+        box-shadow: 0 0 15px rgba(0, 212, 255, 0.6);
+    }
+}
+
+/* ===== COUNTER ANIMATIONS ===== */
+@keyframes countUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* ===== PARTICLE ANIMATIONS ===== */
+@keyframes particleFloat {
+    0% {
+        transform: translateY(100vh) rotate(0deg);
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-100px) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+@keyframes particlePulse {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 0.7;
+    }
+    50% {
+        transform: scale(1.2);
+        opacity: 1;
+    }
+}
+
+/* ===== TEXT ANIMATIONS ===== */
+@keyframes typewriter {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink {
+    0%, 50% {
+        border-color: transparent;
+    }
+    51%, 100% {
+        border-color: var(--accent-cyan);
+    }
+}
+
+@keyframes textGlow {
+    0%, 100% {
+        text-shadow: 0 0 5px rgba(0, 212, 255, 0.3);
+    }
+    50% {
+        text-shadow: 0 0 20px rgba(0, 212, 255, 0.8);
+    }
+}
+
+/* ===== BUTTON ANIMATIONS ===== */
+@keyframes buttonPulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes buttonGlow {
+    0%, 100% {
+        box-shadow: 0 0 20px rgba(0, 212, 255, 0.3);
+    }
+    50% {
+        box-shadow: 0 0 30px rgba(0, 212, 255, 0.6);
+    }
+}
+
+/* ===== CARD ANIMATIONS ===== */
+@keyframes cardHover {
+    0% {
+        transform: translateY(0) scale(1);
+    }
+    100% {
+        transform: translateY(-10px) scale(1.02);
+    }
+}
+
+@keyframes cardGlow {
+    0%, 100% {
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    }
+    50% {
+        box-shadow: 0 8px 25px rgba(0, 212, 255, 0.3);
+    }
+}
+
+/* ===== TIMELINE ANIMATIONS ===== */
+@keyframes timelineMarker {
+    0% {
+        transform: translateX(-50%) scale(0);
+        opacity: 0;
+    }
+    50% {
+        transform: translateX(-50%) scale(1.2);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(-50%) scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes timelineLine {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 100%;
+    }
+}
+
+/* ===== FORM ANIMATIONS ===== */
+@keyframes formShake {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    10%, 30%, 50%, 70%, 90% {
+        transform: translateX(-5px);
+    }
+    20%, 40%, 60%, 80% {
+        transform: translateX(5px);
+    }
+}
+
+@keyframes formSuccess {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* ===== SCROLL ANIMATIONS ===== */
+@keyframes scrollIndicator {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    50% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+}
+
+/* ===== NAVIGATION ANIMATIONS ===== */
+@keyframes navSlideIn {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes navSlideOut {
+    from {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+}
+
+/* ===== SOCIAL LINKS ANIMATIONS ===== */
+@keyframes socialHover {
+    0% {
+        transform: translateX(0) scale(1);
+    }
+    50% {
+        transform: translateX(-5px) scale(1.1);
+    }
+    100% {
+        transform: translateX(0) scale(1);
+    }
+}
+
+/* ===== SKILL CARD ANIMATIONS ===== */
+@keyframes skillCardFlip {
+    0% {
+        transform: rotateY(0deg);
+    }
+    100% {
+        transform: rotateY(180deg);
+    }
+}
+
+@keyframes skillCardFlipBack {
+    0% {
+        transform: rotateY(180deg);
+    }
+    100% {
+        transform: rotateY(0deg);
+    }
+}
+
+/* ===== PROJECT CARD ANIMATIONS ===== */
+@keyframes projectCardHover {
+    0% {
+        transform: translateY(0) scale(1);
+    }
+    100% {
+        transform: translateY(-10px) scale(1.02);
+    }
+}
+
+@keyframes projectOverlay {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* ===== STATISTICS ANIMATIONS ===== */
+@keyframes statCount {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* ===== LOADING ANIMATIONS ===== */
+@keyframes loadingDots {
+    0%, 20% {
+        opacity: 0;
+        transform: translateY(0);
+    }
+    50% {
+        opacity: 1;
+        transform: translateY(-10px);
+    }
+    80%, 100% {
+        opacity: 0;
+        transform: translateY(0);
+    }
+}
+
+/* ===== PARALLAX EFFECTS ===== */
+@keyframes parallaxSlow {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-20px);
+    }
+}
+
+@keyframes parallaxMedium {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-40px);
+    }
+}
+
+@keyframes parallaxFast {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-60px);
+    }
+}
+
+/* ===== GRADIENT ANIMATIONS ===== */
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes gradientFlow {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 100% 100%;
+    }
+}
+
+/* ===== UTILITY ANIMATION CLASSES ===== */
+.animate-fade-in {
+    animation: fadeIn 0.6s ease-out;
+}
+
+.animate-fade-in-up {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+.animate-fade-in-down {
+    animation: fadeInDown 0.6s ease-out;
+}
+
+.animate-fade-in-left {
+    animation: fadeInLeft 0.6s ease-out;
+}
+
+.animate-fade-in-right {
+    animation: fadeInRight 0.6s ease-out;
+}
+
+.animate-scale-in {
+    animation: scaleIn 0.6s ease-out;
+}
+
+.animate-slide-in-up {
+    animation: slideInUp 0.6s ease-out;
+}
+
+.animate-slide-in-down {
+    animation: slideInDown 0.6s ease-out;
+}
+
+.animate-slide-in-left {
+    animation: slideInLeft 0.6s ease-out;
+}
+
+.animate-slide-in-right {
+    animation: slideInRight 0.6s ease-out;
+}
+
+.animate-pulse {
+    animation: pulse 2s infinite;
+}
+
+.animate-bounce {
+    animation: bounce 2s infinite;
+}
+
+.animate-shake {
+    animation: shake 0.5s ease-in-out;
+}
+
+.animate-wiggle {
+    animation: wiggle 0.5s ease-in-out;
+}
+
+.animate-glow {
+    animation: glow 2s infinite;
+}
+
+.animate-float {
+    animation: float 3s ease-in-out infinite;
+}
+
+.animate-float-slow {
+    animation: floatSlow 4s ease-in-out infinite;
+}
+
+.animate-float-fast {
+    animation: floatFast 2s ease-in-out infinite;
+}
+
+.animate-rotate {
+    animation: rotate 2s linear infinite;
+}
+
+.animate-rotate-slow {
+    animation: rotateSlow 4s linear infinite;
+}
+
+.animate-rotate-reverse {
+    animation: rotateReverse 2s linear infinite;
+}
+
+.animate-progress-fill {
+    animation: progressFill 1.5s ease-out;
+}
+
+.animate-progress-glow {
+    animation: progressGlow 2s infinite;
+}
+
+.animate-count-up {
+    animation: countUp 0.8s ease-out;
+}
+
+.animate-particle-float {
+    animation: particleFloat 6s linear infinite;
+}
+
+.animate-particle-pulse {
+    animation: particlePulse 2s ease-in-out infinite;
+}
+
+.animate-typewriter {
+    animation: typewriter 3s steps(40, end);
+}
+
+.animate-blink {
+    animation: blink 1s infinite;
+}
+
+.animate-text-glow {
+    animation: textGlow 2s infinite;
+}
+
+.animate-button-pulse {
+    animation: buttonPulse 0.3s ease-in-out;
+}
+
+.animate-button-glow {
+    animation: buttonGlow 2s infinite;
+}
+
+.animate-card-hover {
+    animation: cardHover 0.3s ease-out;
+}
+
+.animate-card-glow {
+    animation: cardGlow 2s infinite;
+}
+
+.animate-timeline-marker {
+    animation: timelineMarker 0.6s ease-out;
+}
+
+.animate-timeline-line {
+    animation: timelineLine 1s ease-out;
+}
+
+.animate-form-shake {
+    animation: formShake 0.5s ease-in-out;
+}
+
+.animate-form-success {
+    animation: formSuccess 0.5s ease-in-out;
+}
+
+.animate-scroll-indicator {
+    animation: scrollIndicator 2s infinite;
+}
+
+.animate-nav-slide-in {
+    animation: navSlideIn 0.3s ease-out;
+}
+
+.animate-nav-slide-out {
+    animation: navSlideOut 0.3s ease-out;
+}
+
+.animate-social-hover {
+    animation: socialHover 0.3s ease-in-out;
+}
+
+.animate-skill-card-flip {
+    animation: skillCardFlip 0.6s ease-in-out;
+}
+
+.animate-skill-card-flip-back {
+    animation: skillCardFlipBack 0.6s ease-in-out;
+}
+
+.animate-project-card-hover {
+    animation: projectCardHover 0.3s ease-out;
+}
+
+.animate-project-overlay {
+    animation: projectOverlay 0.3s ease-out;
+}
+
+.animate-stat-count {
+    animation: statCount 0.8s ease-out;
+}
+
+.animate-loading-dots {
+    animation: loadingDots 1.4s infinite;
+}
+
+.animate-parallax-slow {
+    animation: parallaxSlow 20s linear infinite;
+}
+
+.animate-parallax-medium {
+    animation: parallaxMedium 15s linear infinite;
+}
+
+.animate-parallax-fast {
+    animation: parallaxFast 10s linear infinite;
+}
+
+.animate-gradient-shift {
+    animation: gradientShift 3s ease infinite;
+}
+
+.animate-gradient-flow {
+    animation: gradientFlow 4s ease infinite;
+}
+
+/* ===== ANIMATION DELAYS ===== */
+.delay-100 {
+    animation-delay: 0.1s;
+}
+
+.delay-200 {
+    animation-delay: 0.2s;
+}
+
+.delay-300 {
+    animation-delay: 0.3s;
+}
+
+.delay-400 {
+    animation-delay: 0.4s;
+}
+
+.delay-500 {
+    animation-delay: 0.5s;
+}
+
+.delay-600 {
+    animation-delay: 0.6s;
+}
+
+.delay-700 {
+    animation-delay: 0.7s;
+}
+
+.delay-800 {
+    animation-delay: 0.8s;
+}
+
+.delay-900 {
+    animation-delay: 0.9s;
+}
+
+.delay-1000 {
+    animation-delay: 1s;
+}
+
+/* ===== ANIMATION DURATIONS ===== */
+.duration-fast {
+    animation-duration: 0.3s;
+}
+
+.duration-normal {
+    animation-duration: 0.6s;
+}
+
+.duration-slow {
+    animation-duration: 1s;
+}
+
+.duration-slower {
+    animation-duration: 1.5s;
+}
+
+.duration-slowest {
+    animation-duration: 2s;
+}
+
+/* ===== ANIMATION EASING ===== */
+.ease-linear {
+    animation-timing-function: linear;
+}
+
+.ease-in {
+    animation-timing-function: ease-in;
+}
+
+.ease-out {
+    animation-timing-function: ease-out;
+}
+
+.ease-in-out {
+    animation-timing-function: ease-in-out;
+}
+
+.ease-bounce {
+    animation-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.ease-elastic {
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* ===== ANIMATION ITERATION ===== */
+.iterate-once {
+    animation-iteration-count: 1;
+}
+
+.iterate-twice {
+    animation-iteration-count: 2;
+}
+
+.iterate-infinite {
+    animation-iteration-count: infinite;
+}
+
+/* ===== ANIMATION FILL MODE ===== */
+.fill-none {
+    animation-fill-mode: none;
+}
+
+.fill-forwards {
+    animation-fill-mode: forwards;
+}
+
+.fill-backwards {
+    animation-fill-mode: backwards;
+}
+
+.fill-both {
+    animation-fill-mode: both;
+}
+
+/* ===== ANIMATION PLAY STATE ===== */
+.pause-animation {
+    animation-play-state: paused;
+}
+
+.resume-animation {
+    animation-play-state: running;
+}
+
+/* ===== REDUCED MOTION SUPPORT ===== */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+    
+    .animate-fade-in,
+    .animate-fade-in-up,
+    .animate-fade-in-down,
+    .animate-fade-in-left,
+    .animate-fade-in-right,
+    .animate-scale-in,
+    .animate-slide-in-up,
+    .animate-slide-in-down,
+    .animate-slide-in-left,
+    .animate-slide-in-right,
+    .animate-pulse,
+    .animate-bounce,
+    .animate-shake,
+    .animate-wiggle,
+    .animate-glow,
+    .animate-float,
+    .animate-float-slow,
+    .animate-float-fast,
+    .animate-rotate,
+    .animate-rotate-slow,
+    .animate-rotate-reverse,
+    .animate-progress-fill,
+    .animate-progress-glow,
+    .animate-count-up,
+    .animate-particle-float,
+    .animate-particle-pulse,
+    .animate-typewriter,
+    .animate-blink,
+    .animate-text-glow,
+    .animate-button-pulse,
+    .animate-button-glow,
+    .animate-card-hover,
+    .animate-card-glow,
+    .animate-timeline-marker,
+    .animate-timeline-line,
+    .animate-form-shake,
+    .animate-form-success,
+    .animate-scroll-indicator,
+    .animate-nav-slide-in,
+    .animate-nav-slide-out,
+    .animate-social-hover,
+    .animate-skill-card-flip,
+    .animate-skill-card-flip-back,
+    .animate-project-card-hover,
+    .animate-project-overlay,
+    .animate-stat-count,
+    .animate-loading-dots,
+    .animate-parallax-slow,
+    .animate-parallax-medium,
+    .animate-parallax-fast,
+    .animate-gradient-shift,
+    .animate-gradient-flow {
+        animation: none !important;
+    }
+}

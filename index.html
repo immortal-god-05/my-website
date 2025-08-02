@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Harish - AI & Machine Learning Engineer, Automation Specialist, and Full-Stack Developer. Explore my portfolio showcasing expertise in AI, NLP, and modern web technologies.">
+    <meta name="keywords" content="Harish, AI Engineer, Machine Learning, Automation, NLP, Full-Stack Developer, Portfolio">
+    <meta name="author" content="Harish">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Harish - AI & Machine Learning Engineer">
+    <meta property="og:description" content="Portfolio showcasing expertise in AI, Automation, and Machine Learning">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://harish-portfolio.com">
+    <meta property="og:image" content="./assets/images/og-image.jpg">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Harish - AI & Machine Learning Engineer">
+    <meta name="twitter:description" content="Portfolio showcasing expertise in AI, Automation, and Machine Learning">
+    
+    <title>Harish - AI & Machine Learning Engineer | Portfolio</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./assets/icons/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/icons/apple-touch-icon.png">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="./css/animations.css">
+    
+    <!-- AOS Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-content">
+            <div class="loading-logo">H</div>
+            <div class="loading-spinner"></div>
+            <p>Loading...</p>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home" aria-label="Go to home section">
+                    <span class="logo-text">H</span>
+                </a>
+            </div>
+            
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link active" aria-label="Home section">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link" aria-label="About section">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#skills" class="nav-link" aria-label="Skills section">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#projects" class="nav-link" aria-label="Projects section">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#experience" class="nav-link" aria-label="Experience section">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link" aria-label="Contact section">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div id="particles-js" class="particles-container"></div>
+        <div class="container">
+            <div class="hero-content">
+            <div class="hero-text" data-aos="fade-up" data-aos-delay="200">
+                <h1 class="hero-title">
+                    Hi, I'm <span class="highlight">Harish</span>
+                </h1>
+                <div class="demo-notice">
+                    <span>THIS IS A DEMO WEBSITE NOT REAL</span>
+                </div>
+                <div class="hero-subtitle">
+                    <span id="typed-text"></span>
+                </div>
+                <p class="hero-description">
+                    Passionate about AI, Machine Learning, and Automation. 
+                    Creating innovative solutions that drive digital transformation.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary" aria-label="View my work">
+                        <span>View My Work</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="./assets/documents/Harish_Resume.pdf" class="btn btn-secondary" download aria-label="Download resume">
+                        <span>Download Resume</span>
+                        <i class="fas fa-download"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="hero-image" data-aos="fade-left" data-aos-delay="400">
+                <div class="profile-container">
+                    <div class="profile-image">
+                        <img src="./assets/images/profile.jpg" alt="Harish - AI Engineer" loading="lazy">
+                    </div>
+                    <div class="floating-elements">
+                        <div class="floating-icon" style="--delay: 0s;">
+                            <i class="fab fa-python"></i>
+                        </div>
+                        <div class="floating-icon" style="--delay: 1s;">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <div class="floating-icon" style="--delay: 2s;">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+            <span>Scroll Down</span>
+        </div>
+        
+        <div class="social-links">
+                            <a href="https://github.com/immortal-god-05" target="_blank" rel="noopener" aria-label="GitHub profile">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://linkedin.com/in/harish-huded-50654a289" target="_blank" rel="noopener" aria-label="LinkedIn profile">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://instagram.com/harish.huded05" target="_blank" rel="noopener" aria-label="Instagram profile">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            <a href="mailto:harishhuded29@gmail.com" aria-label="Send email">
+                <i class="fas fa-envelope"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">Get to know me better</p>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-image" data-aos="fade-right">
+                    <div class="image-container">
+                        <img src="./assets/images/about-me.jpg" alt="Harish working on AI project" loading="lazy">
+                        <div class="image-overlay">
+                            <div class="experience-badge">
+                                <span class="years">2+</span>
+                                <span class="text">Years of Experience</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-text" data-aos="fade-left">
+                    <h3>AI & Machine Learning Engineer</h3>
+                    <p>
+                        I'm a passionate engineer with a strong foundation in AI, Machine Learning, and Automation. 
+                        Currently pursuing my education at Jain College of Engineering, Belgaum, I maintain an 
+                        impressive SGPA of 8.95/10 while actively working on cutting-edge projects.
+                    </p>
+                    
+                    <div class="about-details">
+                        <div class="detail-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <div>
+                                <h4>Education</h4>
+                                <p>Jain College of Engineering, Belgaum</p>
+                                <p>SGPA: 8.95/10</p>
+                            </div>
+                        </div>
+                        
+                        <div class="detail-item">
+                            <i class="fas fa-code"></i>
+                            <div>
+                                <h4>Core Competencies</h4>
+                                <p>Strong foundation in C Programming, NLP expertise, AI Automation, Full-stack development</p>
+                            </div>
+                        </div>
+                        
+                        <div class="detail-item">
+                            <i class="fas fa-language"></i>
+                            <div>
+                                <h4>Languages</h4>
+                                <p>English, Kannada, Hindi, Marathi</p>
+                            </div>
+                        </div>
+                        
+                        <div class="detail-item">
+                            <i class="fas fa-music"></i>
+                            <div>
+                                <h4>Interests</h4>
+                                <p>Music enthusiast, Technology explorer, Continuous learner</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="15">0</span>
+                            <span class="stat-label">Projects Completed</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="2">0</span>
+                            <span class="stat-label">Years Experience</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="8">0</span>
+                            <span class="stat-label">Technologies</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Skills & Expertise</h2>
+                <p class="section-subtitle">Technologies I work with</p>
+            </div>
+            
+            <div class="skills-content">
+                <div class="skills-categories">
+                    <button class="category-btn active" data-category="all">All</button>
+                    <button class="category-btn" data-category="programming">Programming</button>
+                    <button class="category-btn" data-category="ai-ml">AI/ML</button>
+                    <button class="category-btn" data-category="web">Web Tech</button>
+                    <button class="category-btn" data-category="tools">Tools</button>
+                </div>
+                
+                <div class="skills-grid">
+                    <div class="skill-card" data-category="programming" data-aos="flip-left" data-aos-delay="100">
+                        <div class="skill-icon">
+                            <i class="fab fa-python"></i>
+                        </div>
+                        <h3>Python</h3>
+                        <div class="skill-level">
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 90%"></div>
+                            </div>
+                            <span>90%</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-card" data-category="programming" data-aos="flip-left" data-aos-delay="200">
+                        <div class="skill-icon">
+                            <i class="fab fa-java"></i>
+                        </div>
+                        <h3>Java</h3>
+                        <div class="skill-level">
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 85%"></div>
+                            </div>
+                            <span>85%</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-card" data-category="programming" data-aos="flip-left" data-aos-delay="300">
+                        <div class="skill-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>C Programming</h3>
+                        <div class="skill-level">
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 95%"></div>
+                            </div>
+                            <span>95%</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-card" data-category="programming" data-aos="flip-left" data-aos-delay="400">
+                        <div class="skill-icon">
+                            <i class="fab fa-js-square"></i>
+                        </div>
+                        <h3>JavaScript</h3>
+                        <div class="skill-level">
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 80%"></div>
+                            </div>
+                            <span>80%</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-card" data-category="ai-ml" data-aos="flip-left" data-aos-delay="500">
+                        <div class="skill-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h3>TensorFlow</h3>
+                        <div class="skill-level">
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 85%"></div>
+                            </div>
+                            <span>85%</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-card" data-category="ai-ml" data-aos="flip-left" data-aos-delay="600">
+                        <div class="skill-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>Scikit-learn</h3>
+                        <div class="skill-level">
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 90%"></div>
+                            </div>
+                            <span>90%</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-card" data-category="ai-ml" data-aos="flip-left" data-aos-delay="700">
+                        <div class="skill-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <h3>Pandas & NumPy</h3>
+                        <div class="skill-level">
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 88%"></div>
+                            </div>
+                            <span>88%</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-card" data-category="web" data-aos="flip-left" data-aos-delay="800">
+                        <div class="skill-icon">
+                            <i class="fab fa-html5"></i>
+                        </div>
+                        <h3>HTML5</h3>
+                        <div class="skill-level">
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 95%"></div>
+                            </div>
+                            <span>95%</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-card" data-category="web" data-aos="flip-left" data-aos-delay="900">
+                        <div class="skill-icon">
+                            <i class="fab fa-css3-alt"></i>
+                        </div>
+                        <h3>CSS3</h3>
+                        <div class="skill-level">
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 90%"></div>
+                            </div>
+                            <span>90%</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-card" data-category="web" data-aos="flip-left" data-aos-delay="1000">
+                        <div class="skill-icon">
+                            <i class="fab fa-react"></i>
+                        </div>
+                        <h3>React</h3>
+                        <div class="skill-level">
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 75%"></div>
+                            </div>
+                            <span>75%</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-card" data-category="tools" data-aos="flip-left" data-aos-delay="1100">
+                        <div class="skill-icon">
+                            <i class="fab fa-aws"></i>
+                        </div>
+                        <h3>AWS</h3>
+                        <div class="skill-level">
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 80%"></div>
+                            </div>
+                            <span>80%</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-card" data-category="tools" data-aos="flip-left" data-aos-delay="1200">
+                        <div class="skill-icon">
+                            <i class="fab fa-git-alt"></i>
+                        </div>
+                        <h3>Git</h3>
+                        <div class="skill-level">
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 85%"></div>
+                            </div>
+                            <span>85%</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-card" data-category="tools" data-aos="flip-left" data-aos-delay="1300">
+                        <div class="skill-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <h3>MongoDB & MySQL</h3>
+                        <div class="skill-level">
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 82%"></div>
+                            </div>
+                            <span>82%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">Some of my recent work</p>
+            </div>
+            
+            <div class="projects-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="ai-ml">AI/ML</button>
+                <button class="filter-btn" data-filter="automation">Automation</button>
+                <button class="filter-btn" data-filter="web">Web Apps</button>
+                <button class="filter-btn" data-filter="iot">IoT</button>
+            </div>
+            
+            <div class="projects-grid">
+                <div class="project-card" data-category="automation" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-image">
+                        <img src="./assets/images/projects/routine-planner.jpg" alt="My Routine Planner" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" aria-label="View live demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="project-link" aria-label="View source code">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>My Routine Planner</h3>
+                        <p>A comprehensive personal productivity application with intelligent task management and scheduling capabilities.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">MongoDB</span>
+                        </div>
+                        <div class="project-features">
+                            <ul>
+                                <li>Smart task scheduling with AI recommendations</li>
+                                <li>Real-time notifications and reminders</li>
+                                <li>Progress tracking and analytics</li>
+                                <li>Cross-platform synchronization</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-category="iot" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-image">
+                        <img src="./assets/images/projects/cnc-app.jpg" alt="CNC Industry App" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" aria-label="View live demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="project-link" aria-label="View source code">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>CNC Industry App</h3>
+                        <p>Industrial IoT application for direct CNC machine integration with real-time monitoring and automation.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">IoT</span>
+                            <span class="tech-tag">AWS</span>
+                            <span class="tech-tag">React Native</span>
+                        </div>
+                        <div class="project-features">
+                            <ul>
+                                <li>Real-time machine data collection</li>
+                                <li>Predictive maintenance alerts</li>
+                                <li>Production optimization algorithms</li>
+                                <li>Mobile app for field monitoring</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-category="ai-ml" data-aos="fade-up" data-aos-delay="300">
+                    <div class="project-image">
+                        <img src="./assets/images/projects/nlp-chatbot.jpg" alt="NLP Chatbot" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" aria-label="View live demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="project-link" aria-label="View source code">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>NLP Chatbot</h3>
+                        <p>Advanced conversational AI chatbot with natural language processing capabilities for customer support.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">TensorFlow</span>
+                            <span class="tech-tag">NLP</span>
+                            <span class="tech-tag">Flask</span>
+                        </div>
+                        <div class="project-features">
+                            <ul>
+                                <li>Context-aware conversations</li>
+                                <li>Multi-language support</li>
+                                <li>Sentiment analysis</li>
+                                <li>Integration with CRM systems</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-category="web" data-aos="fade-up" data-aos-delay="400">
+                    <div class="project-image">
+                        <img src="./assets/images/projects/ecommerce.jpg" alt="E-commerce Platform" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" aria-label="View live demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="project-link" aria-label="View source code">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>E-commerce Platform</h3>
+                        <p>Full-stack e-commerce solution with advanced features and modern user interface.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">Stripe</span>
+                        </div>
+                        <div class="project-features">
+                            <ul>
+                                <li>Secure payment processing</li>
+                                <li>Inventory management</li>
+                                <li>User authentication</li>
+                                <li>Admin dashboard</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-category="automation" data-aos="fade-up" data-aos-delay="500">
+                    <div class="project-image">
+                        <img src="./assets/images/projects/automation-tool.jpg" alt="Process Automation Tool" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" aria-label="View live demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="project-link" aria-label="View source code">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Process Automation Tool</h3>
+                        <p>RPA (Robotic Process Automation) tool for automating repetitive business processes.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Selenium</span>
+                            <span class="tech-tag">OpenCV</span>
+                            <span class="tech-tag">PyAutoGUI</span>
+                        </div>
+                        <div class="project-features">
+                            <ul>
+                                <li>Visual workflow designer</li>
+                                <li>Screen recording and playback</li>
+                                <li>Error handling and recovery</li>
+                                <li>Performance analytics</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-category="ai-ml" data-aos="fade-up" data-aos-delay="600">
+                    <div class="project-image">
+                        <img src="./assets/images/projects/ml-dashboard.jpg" alt="ML Dashboard" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" aria-label="View live demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="project-link" aria-label="View source code">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>ML Model Dashboard</h3>
+                        <p>Interactive dashboard for monitoring and managing machine learning models in production.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Streamlit</span>
+                            <span class="tech-tag">Scikit-learn</span>
+                            <span class="tech-tag">Plotly</span>
+                        </div>
+                        <div class="project-features">
+                            <ul>
+                                <li>Real-time model performance</li>
+                                <li>Data drift detection</li>
+                                <li>Model versioning</li>
+                                <li>Automated retraining</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Experience & Timeline</h2>
+                <p class="section-subtitle">My journey so far</p>
+            </div>
+            
+            <div class="timeline">
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2023 - Present</div>
+                        <h3>AI Research Intern</h3>
+                        <h4>Tech Innovation Lab</h4>
+                        <p>Working on cutting-edge AI projects focusing on natural language processing and computer vision applications.</p>
+                        <ul>
+                            <li>Developed NLP models for sentiment analysis</li>
+                            <li>Implemented computer vision algorithms</li>
+                            <li>Collaborated with research team on ML projects</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="timeline-item" data-aos="fade-left">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2022 - 2023</div>
+                        <h3>Full-Stack Developer</h3>
+                        <h4>Digital Solutions Inc.</h4>
+                        <p>Built and maintained web applications using modern technologies and best practices.</p>
+                        <ul>
+                            <li>Developed responsive web applications</li>
+                            <li>Implemented RESTful APIs</li>
+                            <li>Optimized application performance</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2021 - 2022</div>
+                        <h3>Student Developer</h3>
+                        <h4>University Projects</h4>
+                        <p>Worked on various academic and personal projects to build a strong foundation in programming.</p>
+                        <ul>
+                            <li>Created automation tools and scripts</li>
+                            <li>Developed data analysis projects</li>
+                            <li>Built web applications for learning</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="timeline-item" data-aos="fade-left">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2020 - Present</div>
+                        <h3>Computer Science Student</h3>
+                        <h4>Jain College of Engineering, Belgaum</h4>
+                        <p>Pursuing degree in Computer Science with focus on AI and Machine Learning.</p>
+                        <ul>
+                            <li>Maintaining SGPA of 8.95/10</li>
+                            <li>Active participation in technical events</li>
+                            <li>Leading student technical clubs</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Let's work together</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info" data-aos="fade-right">
+                    <h3>Let's Connect</h3>
+                    <p>I'm always interested in new opportunities and exciting projects. Feel free to reach out!</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Email</h4>
+                                <a href="mailto:harishhuded29@gmail.com">harishhuded29@gmail.com</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Phone</h4>
+                                <a href="tel:+919742806229">+91 9742806229</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Location</h4>
+                                <p>Belgaum, Karnataka, India</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links-contact">
+                                        <a href="https://github.com/immortal-god-05" target="_blank" rel="noopener" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://linkedin.com/in/harish-huded-50654a289" target="_blank" rel="noopener" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://instagram.com/harish.huded05" target="_blank" rel="noopener" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                    </div>
+                </div>
+                
+                <div class="contact-form" data-aos="fade-left">
+                    <form id="contactForm" novalidate>
+                        <div class="form-group">
+                            <label for="name">Name *</label>
+                            <input type="text" id="name" name="name" required>
+                            <span class="error-message"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                            <span class="error-message"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                            <span class="error-message"></span>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">
+                            <span class="btn-text">Send Message</span>
+                            <span class="btn-loading">
+                                <i class="fas fa-spinner fa-spin"></i>
+                            </span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <span class="logo-text">H</span>
+                        <span class="logo-name">Harish</span>
+                    </div>
+                    <p>AI & Machine Learning Engineer passionate about creating innovative solutions.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="footer-social">
+                                        <a href="https://github.com/immortal-god-05" target="_blank" rel="noopener" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://linkedin.com/in/harish-huded-50654a289" target="_blank" rel="noopener" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://instagram.com/harish.huded05" target="_blank" rel="noopener" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                        <a href="mailto:harishhuded29@gmail.com" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Harish. All rights reserved.</p>
+                <p>Designed & Built with ❤️ by Harish</p>
+            </div>
+        </div>
+        
+        <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/animations.js"></script>
+    <script src="./js/utils.js"></script>
+</body>
+</html> 
